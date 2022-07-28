@@ -38,7 +38,7 @@ class F_Shoe_List : Fragment() {
 //                view.findViewById<TextView>(R.id.tv_description).append(viewModel.single_shoe.value?.description)
                 view.findViewById<TextView>(R.id.tv_name).append(viewModel.single_name.value)
                 view.findViewById<TextView>(R.id.tv_Company).append(viewModel.single_company.value)
-                view.findViewById<TextView>(R.id.tv_size).append(viewModel.single_size.value?.toString())
+                view.findViewById<TextView>(R.id.tv_size).append(viewModel.single_size.value?.toString() ?:" Not set yet")
                 view.findViewById<TextView>(R.id.tv_description).append(viewModel.single_description.value)
                 binding.llList.addView(view)
         }
