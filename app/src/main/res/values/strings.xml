@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ShoeStore_starter</string>
+    <!-- Strings related to login -->
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="example_com">example@##.com</string>
+    <string name="example_password">*-*-*-*-*</string>
+    <string name="register">Register</string>
+    <string name="welcome_message">I am a fresh graduate (2021) with good knowledge in Flutter and Android. \nI have enough knowledge in Dart, Java, Kotlin, OOP, Data Structure, Android Studio, Provider, Bloc, MVVM, Rest APIs and Firebase (Firestore/Authentication). \nAlso, I have effective communication skills that allow me to be open to discussion. \nI am looking forward to gain experience without getting bored with the number of attempts to understand and solve any new problem or challenge.</string>
+    <string name="welcome">Welcome sir! \"%s\" …</string>
+    <string name="welcome_from_welcome_screen">Welcome sir! This is the welcome screen</string>
+    <string name="welcome_from_instruction_screen">Welcome sir! This is the Instruction screen</string>
+    <string name="rules">There are some rules, but they are not written. \n So, just imagine.</string>
+    <string name="go_to_instructions_screen">▷ Go to Instructions screen</string>
+    <string name="see_list_of_shoes">▷ See list of Shoes</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="sign_out">Sign out</string>
+</resources>

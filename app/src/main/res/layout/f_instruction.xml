@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- LinearLayout is the best choice here as it's just 3 consecutive views. So, it's not a big deal-->
+    <!-- I used ScrollView so when the user use the keyboard, he could scroll -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        tools:context=".ui.fragments.F_Instruction">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_from_instruction_screen"
+            android:textSize="20sp"
+            android:layout_margin="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rules"
+            android:layout_margin="16dp"
+            android:lines="11" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/see_list_of_shoes"
+            android:onClick=""
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+    </ScrollView>
+</layout>
