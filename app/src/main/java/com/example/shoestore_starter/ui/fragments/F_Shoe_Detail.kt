@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.text.isDigitsOnly
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -27,7 +28,8 @@ class F_Shoe_Detail : Fragment() {
             : View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.f_shoe_detail, container, false)
 
-        binding.x = viewModel
+//        binding.x = viewModel
+        binding.x = Shoe("", 0.0 , "", "")
         binding.lifecycleOwner = viewLifecycleOwner
 
         binding.apply {
@@ -35,13 +37,20 @@ class F_Shoe_Detail : Fragment() {
             btnCancel.setOnClickListener { findNavController().popBackStack() }
 
             btnSave.setOnClickListener {
-                if(etShoeName.text.isEmpty() || etShoeCompany.text.isEmpty() || etShoeSize.text.isEmpty() || etShoeDescription.text.isEmpty())
-                        Toast.makeText(context, "Fill the whole data", Toast.LENGTH_SHORT)
+                if(etShoeName.text.isEmpty()
+                    || etShoeCompany.text.isEmpty()
+                    || etShoeSize.text.isNullOrEmpty() || etShoeSize.text.toString().equals("0") || etShoeSize.text.toString().equals("0.0") //|| etShoeSize.text.contains("0.0") || etShoeSize.text.contains("0")
+                    || etShoeDescription.text.isEmpty())
+                {
+                    Log.w("hhhh11", "etShoeSize.text => ${etShoeSize.text}")
+                    Toast.makeText(context, "Fill the whole data", Toast.LENGTH_SHORT)
+                }
                 else{
-                    Log.w("hhhh", "viewModel.single_shoe.value => ${viewModel.single_name.value}")
-                    viewModel.addShoe()
+//                    Log.w("hhhh", "viewModel.single_shoe.value => ${viewModel}")
+                    viewModel.addShoe(binding.x!!)
                     findNavController().navigate(F_Shoe_DetailDirections.actionFShoeDetailToFShoeList())
                 }
+                Log.w("hhhh22", "etShoeSize.text => ${etShoeSize.text}")
             }
 
         }

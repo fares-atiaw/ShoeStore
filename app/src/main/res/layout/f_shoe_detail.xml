@@ -9,7 +9,7 @@
     <data>
         <variable
             name="x"
-            type="com.example.shoestore_starter.viewmodels.VM_Shoe" />
+            type="com.example.shoestore_starter.models.Shoe" />
     </data>
 
     <ScrollView
@@ -41,7 +41,7 @@
                 android:layout_marginTop="12dp"
                 android:hint="."
                 android:inputType="textCapWords"
-                android:text="@={x.single_name}"
+                android:text="@={x.name}"
                 android:minHeight="48dp"
                 android:selectAllOnFocus="true"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +67,7 @@
                 android:layout_marginTop="12dp"
                 android:hint="."
                 android:inputType="textCapWords"
-                android:text="@={x.single_company}"
+                android:text="@={x.company}"
                 android:minHeight="48dp"
                 android:selectAllOnFocus="true"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +93,7 @@
                 android:layout_marginTop="8dp"
                 android:hint="."
                 android:inputType="number"
-                android:text="@={x.single_size+``}"
+                android:text="@={x.size+``}"
                 android:minHeight="48dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +117,7 @@
                 android:layout_marginTop="12dp"
                 android:hint="."
                 android:inputType="textMultiLine"
-                android:text="@={x.single_description}"
+                android:text="@={x.description}"
                 android:minHeight="48dp"
                 android:selectAllOnFocus="true"
                 app:layout_constraintEnd_toEndOf="parent"

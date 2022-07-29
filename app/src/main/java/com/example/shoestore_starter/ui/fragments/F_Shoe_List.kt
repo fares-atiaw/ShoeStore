@@ -37,16 +37,22 @@ class F_Shoe_List : Fragment() {
 
         if (viewModel.l_shoes.value!!.isNotEmpty())
         {
-            for(v in viewModel.l_shoes.value!!)
-//                view.findViewById<TextView>(R.id.tv_name).append(viewModel.single_shoe.value?.name)
-//                view.findViewById<TextView>(R.id.tv_Company).append(viewModel.single_shoe.value?.company)
-//                view.findViewById<TextView>(R.id.tv_size).append(viewModel.single_shoe.value?.size.toString())
-//                view.findViewById<TextView>(R.id.tv_description).append(viewModel.single_shoe.value?.description)
-                view.findViewById<TextView>(R.id.tv_name).append(viewModel.single_name.value)
+            for(v in viewModel.l_shoes.value!!){
+                /*view.findViewById<TextView>(R.id.tv_name).append(viewModel.single_shoe.value?.name)
+               view.findViewById<TextView>(R.id.tv_Company).append(viewModel.single_shoe.value?.company)
+               view.findViewById<TextView>(R.id.tv_size).append(viewModel.single_shoe.value?.size.toString())
+               view.findViewById<TextView>(R.id.tv_description).append(viewModel.single_shoe.value?.description)*/
+                /*view.findViewById<TextView>(R.id.tv_name).append(viewModel.single_name.value)
                 view.findViewById<TextView>(R.id.tv_Company).append(viewModel.single_company.value)
                 view.findViewById<TextView>(R.id.tv_size).append(viewModel.single_size.value?.toString() ?:" Not set yet")
-                view.findViewById<TextView>(R.id.tv_description).append(viewModel.single_description.value)
+                view.findViewById<TextView>(R.id.tv_description).append(viewModel.single_description.value)*/
+                view.findViewById<TextView>(R.id.tv_name).append(v.name)
+                view.findViewById<TextView>(R.id.tv_Company).append(v.company)
+                view.findViewById<TextView>(R.id.tv_size).append(v.size.toString() ?:" Not set yet")
+                view.findViewById<TextView>(R.id.tv_description).append(v.description)
                 binding.llList.addView(view)
+            }
+
         }
 
         binding.fab.setOnClickListener {

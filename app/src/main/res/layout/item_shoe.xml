@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:padding="5dp"
         >
         <TextView
             android:id="@+id/tv_name"
@@ -26,7 +27,7 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginStart="5sp"
-            android:text="Name:"
+            android:text="Name: "
             />
 
         <TextView
@@ -37,7 +38,7 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginStart="5sp"
-            android:text="Company:"
+            android:text="Company: "
             />
 
         <TextView
@@ -48,7 +49,7 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginStart="5sp"
-            android:text="Size:"
+            android:text="Size: "
             />
 
         <TextView
@@ -59,7 +60,7 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginStart="5sp"
-            android:text="Description:"
+            android:text="Description: "
             />
 
     </LinearLayout>
