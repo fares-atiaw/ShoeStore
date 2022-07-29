@@ -28,7 +28,7 @@ class F_Login : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.f_login, container, false)
 
         binding.x = viewModel
-        binding.lifecycleOwner = this
+//        binding.lifecycleOwner = this
 
         binding.btnLogin.isEnabled = false
         watcher = object : TextWatcher {

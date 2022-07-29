@@ -12,14 +12,14 @@ class VM_Login : ViewModel() {
     private var _email = MutableLiveData<String>()
     val email: LiveData<String>
         get() = _email
-    fun updateEmail(s: Editable) {
-        _email.value = s.toString() }
+//    fun updateEmail(s: Editable) {
+//        _email.value = s.toString() }
 
     private var _password = MutableLiveData<String>()
-        val password: LiveData<String>
-            get() = _password
-    fun updatePassword(s: Editable) {
-        _password.value = s.toString() }
+    val password: LiveData<String>
+        get() = _password
+//    fun updatePassword(s: Editable) {
+//        _password.value = s.toString() }
 
 
 }

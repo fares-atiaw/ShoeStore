@@ -18,19 +18,19 @@ class VM_Shoe : ViewModel() {
     private var _single_name = MutableLiveData<String>()
     val single_name: LiveData<String>
         get() = _single_name
-    fun updateName(s: Editable) {
-        _single_name.value = s.toString() }
+//    fun updateName(s: Editable) {
+//        _single_name.value = s.toString() }
 
     private var _single_company = MutableLiveData<String>()
     val single_company: LiveData<String>
         get() = _single_company
-    fun updateCompany(s: Editable) {
-        _single_company.value = s.toString() }
+//    fun updateCompany(s: Editable) {
+//        _single_company.value = s.toString() }
 
     private var _single_size = MutableLiveData<Double>()
         val single_size: LiveData<Double>
             get() = _single_size
-    fun updateSize(s: Editable) {
+    /*fun updateSize(s: Editable) {
 //        if(s.equals(null))
 //            _single_size.value = 0.0
 //        else {
@@ -38,13 +38,13 @@ class VM_Shoe : ViewModel() {
 //            _single_size.value = s.toString().plus('.').toDouble()
 //            Log.w("_single_size.value => ", "${ _single_size.value}")
 //        }
-    }
+    }*/
 
     private var _single_description = MutableLiveData<String>()
     val single_description: LiveData<String>
         get() = _single_description
-    fun updateDescription(s: Editable) {
-        _single_description.value = s.toString() }
+//    fun updateDescription(s: Editable) {
+//        _single_description.value = s.toString() }
 
     private val _l_shoes = MutableLiveData<ArrayList<Shoe>>(arrayListOf())
     val l_shoes: LiveData<ArrayList<Shoe>>

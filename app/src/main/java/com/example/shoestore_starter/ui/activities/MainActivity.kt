@@ -27,19 +27,19 @@ private lateinit var config: AppBarConfiguration
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        setSupportActionBar(binding.toolbar)
+//        setSupportActionBar(binding.toolbar)
 
         navController = binding.myNavHostFragment.getFragment<NavHostFragment>().navController
         NavigationUI.setupActionBarWithNavController(this, navController)
-        config = AppBarConfiguration(navController.graph)
+//        config = AppBarConfiguration(navController.graph)
 
 //        setSupportActionBar(binding.toolbar)
 
-        NavigationUI.setupWithNavController(binding.toolbar, navController)
-        binding.toolbar.setupWithNavController(navController, config) // soon
+//        NavigationUI.setupWithNavController(binding.toolbar, navController)
+//        binding.toolbar.setupWithNavController(navController, config) // soon
 //        setupActionBarWithNavController(navController, config)
 
-        // Add menu items without overriding methods in the Activity
+        /*// Add menu items without overriding methods in the Activity
         addMenuProvider(object : MenuProvider {
             override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
                 // Add menu items here
@@ -48,13 +48,13 @@ private lateinit var config: AppBarConfiguration
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
 //                navController.popBackStack(R.id.f_Welcome, false)
                 NavigationUI.onNavDestinationSelected(menuItem, binding.myNavHostFragment.findNavController())
-                navController.navigate("F_Login")
-                navController.popBackStack()
+//                navController.navigate("F_Login")
+//                navController.popBackStack()
 
 //                navController.popBackStack(R.id.f_Login, false)
                 return true
             }
-        })
+        })*/
     }
 
     // when the upButton clicked
